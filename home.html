@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Femi-jirani</title>
+  </head>
+ <body onload="loaderFunction()">
+    <div id="loader">
+      <img src="images/loader.svg" alt="Loader Animation">
+    </div>
+    <div id="content">
+      <nav class="navbar navbar-expand-md sticky-top">
+      <!--<a class="navbar-brand"><img class="logo" src="{% static 'users/images/logo.png' %}"></a>-->
+        <span class="navbar-text">Femi-jirani</span>
+        
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="donate.html"></i>Donate</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+		<div class="banner">
+		  <img src="images/WE.jpg">
+      <div class="center">
+        <h1>Study shows:</h1>
+        <h2>  "65% of Kenyan women and girls are unable to afford sanitary towels"</h2>
+        <h4>-Menstrual Health in Kenya</h4>
+      </div>
+		</div>
+    
+	<div class="container info">
+	<div style="text-align: center">
+	  <h3><b>WELCOME</b></h3>
+	  	<p>
+	  		Femi-Jirani is a platform created to connect individuals in need of sanitary towels but are facing deficiency, due to lack of financial incompetency, to individuals who are willing to donate towards the goal of meeting their need.<br>
+	  		 <button type="button" class="btn btn-primary btn-lg"><a href="donate.html"></a>Donate</button>
+	  	</p>
+	</div> 
+	</div>
+	</div>
+    <script type="text/javascript">
+      var Start;
+
+      function loaderFunction(){
+        Start = setTimeout(showpage,2500);
+      }
+      function showpage(){
+        document.getElementById("loader").style.display="none";
+        document.getElementById("content").style.filter= "blur(0px)";
+      }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+body{
+    background-color: #F5F5F5;
+    color: #212121;
+    font-size: 1.3rem;
+    font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif; 
+}
+.navbar{
+    background-color: #E91E63;
+    color: #ffffff;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.nav-item{
+    padding: 10px;
+}
+.nav-link{
+    color: #fff;
+}
+
+.nav-link:hover{
+    color: #FF4081;
+}
+.navbar-text{
+    color: #fff;
+    font-size: 30px;
+}
+.banner{
+    position: relative;
+}
+.banner img{
+    width:100%;
+    height: auto;
+    max-height:100%;
+    opacity: .7;
+
+ }
+ .center {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    color: #ffffff;
+    text-shadow:#212121 1px 0 10px;
+
+}
+
+.center h1{
+    text-align: left;
+    font-size: 5rem;
+    
+}
+
+.center h2{
+    text-align: left;
+}
+
+.center h4{
+    text-align: right;
+}
+.center button{
+    margin-top: 10px;
+}
+#loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+#content{
+    filter: blur(5px);
+}
+
+.info{
+	font-size: 1.5rem;
+}
+
+.info h3{
+	margin-top: 20px;
+}
+
+.btn .bg-primary{
+    background: #E91E63!important;
+}
+
+.map{
+    height: 600px;
+    background-image: url("images/map.jpg");
+}
+
+
+@media (min-width: 769px) {
+    #mainNav > ul > li:not(:last-child) {
+        position: relative;
+    }
+
+    #mainNav > ul > li:not(:last-child) > a:after {
+        content: "";
+        height: 20px;
+        width: 1px;
+        background: #ffffff;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -10px; /* half of your height */
+    }
+}
+
+@media (max-width: 769px) {
+    body{
+        font-size: 0.9rem;
+    }
+    .info{
+    	font-size: 1.1rem;
+    }
+
+    .center h1{
+    text-align: left;
+    font-size: 2rem;
+    
+}
+
+    .center h2{
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .center h4{
+        text-align: right;
+        font-size: .6rem;
+    }
+    .map{
+    height: 350px;
+    width: 100%;
+}
+}
